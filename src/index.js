@@ -33,7 +33,7 @@ class PickerColumn extends Component {
     let selectedIndex = options.indexOf(value);
     if (selectedIndex < 0) {
       // throw new ReferenceError();
-      console.warn('Warning: "' + this.props.name+ '" doesn\'t contain an option of "' + value + '".');
+      console.warn(`Warning: ${ this.props.name } doesn't contain an option of ${ value } .`)
       this.onValueSelected(options[0]);
       selectedIndex = 0;
     }
